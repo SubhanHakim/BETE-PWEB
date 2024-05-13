@@ -1,0 +1,16 @@
+'use client'
+
+import { CartContextProvider } from "@/hooks/useCart";
+import React from "react";
+
+interface CartContextProviderProps {
+    children: React.ReactNode
+}
+
+const CartProvider: React.FC<CartContextProviderProps> = ({ children }) => {
+    return (
+        <CartContextProvider>{children}</CartContextProvider>
+    )
+}
+
+export default CartProvider;
