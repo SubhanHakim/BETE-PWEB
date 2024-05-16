@@ -1,4 +1,4 @@
-export const Products = [
+export const products = [
     {
         id: "1",
         name: "Sapi Perah",
@@ -14,6 +14,9 @@ export const Products = [
         images: [
             {
                 image: "/img/product1.png",
+            },
+            {
+                image: "/img/product2.png",
             }
         ],
         reviews: [
@@ -29,7 +32,7 @@ export const Products = [
                     name: "Asryil",
                     email: "Asryil@gmail.com",
                     emailVerified: null,
-                    image: "testing",
+                    image: "/img/profile1.png",
                     hashedPassword: null,
                     createdAt: "2023-05-30T08:08:53.979Z",
                     updatedAt: "2023-05-30T08:08:53.979Z",
@@ -53,6 +56,7 @@ export const Products = [
         images: [
             {
                 image: "/img/product2.png",
+                view: "testingg"
             }
         ],
         reviews: [
@@ -105,7 +109,7 @@ export const Products = [
                     name: "Asryil",
                     email: "Asryil@gmail.com",
                     emailVerified: null,
-                    image: "testing",
+                    image: "https://lh3.googleusercontent.com/a/AAcHTtcuRLwWi1vPKaQOcJlUurlhRAIIq2LgYccE8p32=s96-c",
                     hashedPassword: null,
                     createdAt: "2023-05-30T08:08:53.979Z",
                     updatedAt: "2023-05-30T08:08:53.979Z",
@@ -140,7 +144,7 @@ export const Products = [
                     name: "Asryil",
                     email: "Asryil@gmail.com",
                     emailVerified: null,
-                    image: "testing",
+                    image: "https://lh3.googleusercontent.com/a/AAcHTtcuRLwWi1vPKaQOcJlUurlhRAIIq2LgYccE8p32=s96-c",
                     hashedPassword: null,
                     createdAt: "2023-05-30T08:08:53.979Z",
                     updatedAt: "2023-05-30T08:08:53.979Z",
@@ -175,7 +179,7 @@ export const Products = [
                     name: "Asryil",
                     email: "Asryil@gmail.com",
                     emailVerified: null,
-                    image: "testing",
+                    image: "https://lh3.googleusercontent.com/a/AAcHTtcuRLwWi1vPKaQOcJlUurlhRAIIq2LgYccE8p32=s96-c",
                     hashedPassword: null,
                     createdAt: "2023-05-30T08:08:53.979Z",
                     updatedAt: "2023-05-30T08:08:53.979Z",

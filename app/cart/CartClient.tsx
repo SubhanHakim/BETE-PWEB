@@ -5,9 +5,10 @@ import { MdArrowBack } from "react-icons/md";
 import Heading from "../components/Heading";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ItemContent from "./ItemContent";
+import { formatPrice } from "@/utils/formatPrice";
 
 const CartClient = () => {
-    const { cartProducts } = useCart()
+    const { cartProducts, handleClearCart, cartTotalAmount } = useCart()
 
     if (!cartProducts || cartProducts.length === 0) {
         return (
@@ -39,12 +40,12 @@ const CartClient = () => {
             </div>
             <div className="border-t-[1.5px] border-slate-200 py-4 flex justify-between gap-4">
                 <div className="w-[180px]">
-                    <ButtonPrimary label="Hapus Keranjang" onClick={() => { }} small outline />
+                    <ButtonPrimary label="Hapus Keranjang" onClick={() => {handleClearCart()}} small outline />
                 </div>
                 <div className="text-sm flex flex-col gap-1 items-start">
                     <div className="flex gap-10 justify-between text-base w-full font-semibold">
                         <span>Subtotal</span>
-                        <span>Rp.20.000.000</span>
+                        <span>{formatPrice(cartTotalAmount)}</span>
                     </div>
                     <p className="text-slate-500">pajak dan pengiriman dihitung saat checkout</p>
                     <ButtonPrimary label="Bayar" onClick={() => { }} />

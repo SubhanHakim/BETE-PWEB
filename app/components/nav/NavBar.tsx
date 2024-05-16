@@ -5,6 +5,8 @@ import { IoCartOutline } from "react-icons/io5";
 import { CiHeart, CiSearch } from "react-icons/ci";
 import InputSearch from "./InputSearch";
 import NavList from "./NavList";
+import CartCount from "./CartCount";
+import UserMenu from "./userMenu";
 
 const NavBar = () => {
     return (
@@ -24,7 +26,7 @@ const NavBar = () => {
                                 </div>
                                 <div className="flex items-center gap-5">
                                     <CiHeart className="text-2xl" />
-                                    <IoCartOutline className="text-2xl" />
+                                    <CartCount />
                                 </div>
                             </div>
                         </div>
